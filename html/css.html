@@ -1,3 +1,113 @@
+<<<<<<< HEAD:Html/css.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/css.png" type="image/png">
+    <title>CSS</title>
+</head>
+<body>
+
+    <hr>
+    <header style="width:100%; overflow:auto;">
+
+        <a href="../index.html"><img src="../Images/css.png" alt="logo html" width="90" height="60" style="float:left; margin-right:20px;"></a>
+      
+        <nav style="float:left;">
+            <a href="../index.html">Inicio</a>&emsp;&emsp;
+            <a href="etiquetas.html" target="_blank">Etiquetas</a>&emsp;&emsp;
+            <a href="atributos.html" target="_blank">Atributos</a>&emsp;&emsp;
+            <a href="css.html">CSS</a>&emsp;&emsp;
+            <a href="Javascript.html" target="_blank">JavaScript</a>&emsp;&emsp;
+           </nav>
+
+         <nav style="float:right;">      
+            <a href="contacto.html" target="_blank">Contacto</a>&emsp;&emsp;
+            <a href="acercade.html" target="_blank">Acerca de</a>&emsp;&emsp;
+        </nav>
+        
+    </header>
+    <hr>
+
+    <main>
+        <h1>Introduccion a CSS</h1>
+
+        <ol>
+            <li><a href="">Qué es CSS</a></li>
+            <li><a href="">Cómo utilizar CSS con HTML</a></li>
+            <li><a href="">CSS en linea</a></li>
+            <li><a href="">CSS en interno</a></li>
+            <li><a href="">CSS en externo</a></li>
+        </ol>
+
+        <hr>
+        <section>
+            <video src="../Videos/css.mp4" controls style="float:right; margin-left:15px;" width="290" height="150"></video>
+            <h2>1- Qué es CSS?</h2>
+                <p><strong>CSS</strong>, al igual que <strong>HTML</strong>, es uno de los lenguajes centrales de Internet. Mientras que para añadir texto a un sitio web se utiliza <strong>HTML</strong> y se estructura semánticamente, para definir el diseño del contenido se utiliza <strong>CSS</strong>. Aunque <strong>HTML</strong> y <strong>CSS</strong> se utilizan en combinación, las instrucciones de diseño de <strong>CSS</strong> y los elementos de HTML existen por separado. Esto significa que una máquina puede leer un documento electrónico incluso sin <strong>CSS</strong>. Con la ayuda de <strong>CSS</strong>, el contenido del navegador se prepara visualmente y se presenta de forma atractiva.
+                <strong>CSS</strong> es un “estándar vivo” que sigue siendo desarrollado por el <em>World Wide Web Consortium</em>. Por esta razón siempre hay nuevas funciones y aplicaciones prácticas que descubrir. El lenguaje de hojas de estilo, muy extendido, surgió en los años 90. En aquella época, la idea de utilizar hojas de estilo para mostrar el contenido de la web no era del todo nueva. Pero CSS se diferenciaba en un aspecto importante de otros elementos orientados a la visualización que ya existían en <strong>HTML:</strong> los usuarios tenían ahora la opción de definir reglas de diseño para grupos de elementos en varios documentos y en una sola hoja de estilo.</p>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Como utilizar CSS con HTML</h2>
+                <p>La vinculación de CSS en HTML es posible con hojas de estilo internas o externas. Con las hojas de estilo internas, las instrucciones CSS se encuentran dentro del documento HTML. Así, puedes integrar CSS al principio del archivo HTML o colocarlo en el código fuente. Con este método, una buena comprensión básica de HTML y su sintaxis es una ventaja. La forma más común y limpia de desarrollar páginas web es utilizar hojas de estilo CSS externas. El CSS se integra enlazando el documento HTML con un archivo CSS externo. A continuación, se presenta un resumen de los tres métodos:Estilo inline, es decir, directamente en el código fuente Al principio del documento HTML Externalizado en un archivo CSS externo</p>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS en linea</h2>
+                <p>Con este método, las instrucciones de diseño se integran directamente en el código fuente mediante una etiqueta de estilo. Las propiedades deseadas solo se asignan a un elemento, de modo que es posible realizar diseños diferentes en todo el documento HTML. En el ejemplo siguiente, el encabezamiento H1 debe aparecer en azul y con un tamaño de letra de 14: &lt;h1 style="color:blue; font-size:14px;">Esto es un encabezadoh1&gt;</p>
+
+                <p>Con este tipo de integración, se pierden muchas de las ventajas de CSS. Entre ellas, la posibilidad de definir un único comando que luego se aplica, por ejemplo, a todos los elementos H1 del documento HTML. En algunas circunstancias, también hay un mayor esfuerzo de mantenimiento, porque se requiere la intervención directa en el código HTML.</p>
+        </section>
+        <hr>
+
+         <section>
+            <img src="../Images/cssinterno.png" alt="css interno" style="float:right; margin-left:15px;" width="290" height="150">
+            <h2>CSS interno </h2>
+                <p>En este caso, se incluye el CSS en la cabecera del documento HTML. La etiqueta de estilo se convierte así en parte del elemento de cabecera y se aplica a todo el archivo. Las instrucciones de diseño están contenidas en el documento, pero están separadas del código HTML. En el siguiente ejemplo, se aplica el mismo comando que en el ejemplo anterior. Esta vez, sin embargo, todos los encabezados H1 del archivo deben ser formateados de acuerdo con la información.
+            </p><br><br><br>
+        </section>
+        <hr>
+
+        <section>
+            <img src="../Images/cssExterno.png" alt="css externo" style="float:right; margin-left:15px;" width="290"
+                height="190">
+            <h2>CSS externo </h2>
+                <p>Este es posiblemente el mejor método para enlazar CSS en HTML. Un sitio web suele constar de muchas páginas, por lo que tiene sentido guardar las instrucciones de diseño en un archivo separado. Esto permite una separación limpia entre el contenido y el diseño y facilita el mantenimiento. El archivo exportado está simplemente vinculado al documento HTML. Se guarda la hoja de estilos externa con la extensión .css y luego se utiliza una etiqueta de enlace para incluirla en el archivo HTML. En el siguiente ejemplo, el archivo CSS se llama stylesheet.css.</p>
+
+                <p>El atributo rel define el tipo de relación lógica y href hace referencia al archivo CSS que se va a incrustar. Ten en cuenta que el elemento link puede tomar otros atributos. Con media = "print" específicas, por ejemplo, que la hoja de estilos solo se utiliza en la vista de impresión.</p>
+        </section>
+
+        <aside>
+            <h5>Mas información</h5>
+            <p>Para más detalles sobre CSS visita <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs</a>.</p>
+
+            <p>Tambien puedes obtener mas informacion sobre CSS en linea, interno y externo en el siguiente video:</p>
+            <video src="../Videos/CSSInline.mp4" controls ></video>
+        </aside>
+        <br><br>
+        <aside>
+            <h3>Redes sociales</h3>
+            <p>Síguenos para más contenidos de desarrollo web:</p>
+            
+                <a href="https://www.instagram.com/mouredev/" target="_blank"><img src="../Images/instagram.png" alt="instagram" width="30" height="30"></a>&emsp;
+                <a href="#" target="_blank"><img src="../Images/whatsapp.png" alt="whatsapp" width="30" height="30"></a>&emsp;
+                <a href="https://x.com/MoureDev" target="_blank"><img src="../Images/twitter.png" alt="x twitter" width="30" height="30"></a> 
+        </aside>
+
+
+    </main>
+
+    <footer>
+        <p> &copy;2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -106,4 +216,5 @@
 
     
 </body>
+>>>>>>> 638558f26917a9e7071e79d78199b73a9586b78f:html/css.html
 </html>
